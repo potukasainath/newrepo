@@ -1,0 +1,33 @@
+# GETTING ALL PLAYERS
+GET http://localhost:3000/players/
+
+###
+# GETTING SINGLE PLAYER
+GET http://localhost:3000/players/1/ 
+
+###
+# UPDATING A PLAYER 
+PUT http://localhost:3000/players/1/
+Content-Type: application/json
+
+{
+    "playerName" :  "Rahul"
+}
+
+###
+#GETTING SINGLE MATCH
+GET http://localhost:3000/matches/11/
+
+###
+# GETTING ALL PLAYERS MATCHES
+GET http://localhost:3000/players/3/matches
+
+###
+# GETTING ALL MATCHES ID
+GET http://localhost:3000/matches/2/players
+
+
+
+###
+# GETTING SINGLE PLAYER SCORE
+GET http://localhost:3000/players/3/playerScores/
